@@ -1,12 +1,12 @@
-# 🔬 AI-Powered Medical Image Restoration using Diffusion Models
+# AI-Powered Medical Image Restoration using Diffusion Models
 
 ***
 
 A cutting-edge diffusion-based image restoration system that enhances degraded chest X-ray images to improve diagnostic accuracy. This project leverages generative AI and UNet architecture to recover high-quality medical images from inputs affected by noise, blur, and imaging artifacts. 
 
-**🚀 Live Notebook:** [Google Colab Demo](https://colab.research.google.com/drive/1KSnNWeA_sHc-IRAfB-M_XARPKJd0dn5j?usp=sharing)
+**Live Notebook:** [Google Colab Demo](https://colab.research.google.com/drive/1KSnNWeA_sHc-IRAfB-M_XARPKJd0dn5j?usp=sharing)
 
-## 📌 Problem Statement
+## Problem Statement
 
 Chest X-ray images are frequently degraded by noise, blur, low contrast, and imaging artifacts, which can obscure critical clinical details and negatively impact diagnosis. Conventional image enhancement methods struggle to handle diverse and complex degradations effectively.
 
@@ -16,7 +16,7 @@ This project addresses these challenges by developing a **diffusion-based image 
 - Handle multiple types of degradation simultaneously
 - Achieve superior performance metrics (PSNR: 32.98 dB, SSIM: 0.9225)
 
-## 🎯 Real-World Applications
+## Real-World Applications
 
 - **Medical Diagnostics**: Enhancing low-quality X-rays for accurate diagnosis
 - **Legacy Archive Restoration**: Improving old medical imaging records
@@ -24,7 +24,7 @@ This project addresses these challenges by developing a **diffusion-based image 
 - **Emergency Medicine**: Quick enhancement of suboptimal emergency room scans
 - **Research**: Creating clean datasets from degraded historical medical images
 
-## ✨ Key Features
+## Key Features
 
 - **Diffusion-Based Architecture**: State-of-the-art generative AI approach for image restoration
 - **UNet Backbone**: Encoder-decoder architecture with skip connections for detail preservation 
@@ -33,7 +33,7 @@ This project addresses these challenges by developing a **diffusion-based image 
 - **High Performance**: Achieves PSNR of 32.98 dB and SSIM of 0.9225
 - **GPU-Accelerated**: Optimized for training on Google Colab with GPU support
 
-## 🏗️ Architecture Overview
+## Architecture Overview
 
 ### Diffusion Process
 
@@ -60,7 +60,7 @@ The restoration process utilizes:
 
 This approach enables the model to learn intricate details and effectively enhance image clarity during restoration. 
 
-## 📊 Dataset
+## Dataset
 
 **Source**: Chest X-Ray Images (Pneumonia) - Paul Mooney (Kaggle)
 
@@ -102,7 +102,7 @@ This approach enables the model to learn intricate details and effectively enhan
 - **Kaggle API** – Downloading the chest X-ray dataset 
 - **Google Colab** – GPU-enabled environment for training and experimentation
 
-## 🚀 Getting Started
+## Getting Started
 
 ### Prerequisites
 - Python 3.8+
@@ -135,7 +135,7 @@ unzip chest-xray-pneumonia.zip
 3. Run cells sequentially
 
 
-## 📈 Training Process
+## Training Process
 
 ### Training Configuration
 - **Epochs**: 15 epochs shown in training curve 
@@ -150,7 +150,7 @@ The model demonstrates consistent convergence with decreasing loss over epochs:
 - **Training Loss**: Decreases from ~0.012 to ~0.004
 - **Validation Loss**: Closely tracks training loss, indicating good generalization
 
-## 🎯 Performance Metrics
+## Performance Metrics
 
 ### Quantitative Results
 - **PSNR (Peak Signal-to-Noise Ratio)**: 32.98 dB 
@@ -167,7 +167,7 @@ The model produces visually superior results compared to degraded inputs, closel
 - **Restored**: Clean, enhanced outputs
 - **Ground Truth**: Original high-quality reference images
 
-## 🔍 How It Works
+## How It Works
 
 ### 1. Forward Diffusion (Training)
 ```python
@@ -197,7 +197,7 @@ psnr = peak_signal_noise_ratio(restored, ground_truth)
 ssim = structural_similarity(restored, ground_truth)
 ```
 
-## 📊 Visualizations
+## Visualizations
 
 The notebook includes comprehensive visualizations:
 - **Training/Validation Loss Curves**: Monitor convergence 
@@ -205,7 +205,7 @@ The notebook includes comprehensive visualizations:
 - **Metric Tracking**: PSNR and SSIM progression
 - **Denoising Steps**: Intermediate outputs during restoration
 
-## 🧪 Experimental Setup
+## Experimental Setup
 
 ### Degradation Simulation
 To create training pairs, the following degradations are applied to clean X-rays:
@@ -220,7 +220,7 @@ To create training pairs, the following degradations are applied to clean X-rays
 - Intensity variations
 - Crop and resize
 
-## 🎓 Key Concepts Explained
+## Key Concepts Explained
 
 ### Diffusion Models
 Diffusion models work by:
@@ -239,7 +239,7 @@ Diffusion models work by:
 - Better handling of complex degradations
 - Proven success in image-to-image translation tasks
 
-## 🔬 Future Enhancements
+## Future Enhancements
 
 ### Model Improvements
 - **Conditional Diffusion**: Guide restoration based on pathology type
@@ -265,7 +265,7 @@ Diffusion models work by:
 - Blind quality assessment tests
 - Edge case analysis
 
-## 📚 Research Background
+## Research Background
 
 This project builds upon recent advances in:
 - **Denoising Diffusion Probabilistic Models (DDPM)**
@@ -273,7 +273,7 @@ This project builds upon recent advances in:
 - **Image-to-Image Translation with Diffusion**
 - **Medical Image Enhancement using Deep Learning**
 
-## ⚠️ Limitations & Considerations
+## Limitations & Considerations
 
 ### Current Limitations
 - Training requires significant GPU resources
@@ -282,7 +282,7 @@ This project builds upon recent advances in:
 - Simulated degradations may not fully match real-world artifacts
 
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - **Dataset**: Paul Mooney for the Chest X-Ray Images (Pneumonia) dataset on Kaggle 
 - **Framework**: HuggingFace team for the Diffusers library
@@ -290,7 +290,7 @@ This project builds upon recent advances in:
 - **Community**: PyTorch and medical imaging research communities
 
 
-## 📸 Visual Results
+## Visual Results
 
 ### Architecture Diagram
 <img width="960" height="530" alt="image" src="https://github.com/user-attachments/assets/4cab43a7-5dea-41ee-9733-d46e08602b6c" />
